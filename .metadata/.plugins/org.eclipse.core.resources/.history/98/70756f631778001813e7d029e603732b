@@ -1,0 +1,25 @@
+package com.biz.word;
+
+import java.util.List;
+
+import com.biz.word.service.WordService;
+import com.biz.word.vo.WordVO;
+
+public class Exec03 {
+
+	// 자바의 시작점 method, 진입점 method
+	public static void main(String[] args) {
+		
+		WordService service = new WordService();
+		
+		List<WordVO> list = service.getWordList();
+		
+		for(WordVO vo : list) {
+			System.out.println(vo);
+		}
+		
+		System.out.println("총 단어 개수 : "+list.size());
+
+	}
+
+}

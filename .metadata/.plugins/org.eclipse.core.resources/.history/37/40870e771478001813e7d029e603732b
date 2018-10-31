@@ -1,0 +1,46 @@
+package com.biz.word.dao;
+
+import java.sql.Connection;
+
+/*
+ * DB와 연동을 위해서
+ * 연결, CRUD를 구현하는 클래스
+ */
+public class WordDao {
+	// db 연결정보를 보관할 member변수 선언
+	Connection conn = null ;
+	
+	// db 연결을 위한 정보 설정
+	String mySqlDriver = "org.gjt.mm.mysql.Driver";
+	String url = "jdbc:mysql://localhost:3306/mydb";
+	String user = "root";
+	String password = "1111";
+	
+	
+	// 데이터연결설정
+	private void dbConnect() {
+		// Driver Loading
+		
+		// Connection 생성
+		
+		
+	}
+	
+	// CRUD
+	// 1. CREAT : insert
+	public void insert() {
+		
+	}
+	
+	// 2. Read : select
+	//	  전체 모두 읽기 : selectAll()
+	//	  key에 해당하는 레코드 1개 읽기 : selectOne()
+	public void selectAll() {
+		
+	}
+	
+	public void selectOne() {
+		
+	}
+	
+}

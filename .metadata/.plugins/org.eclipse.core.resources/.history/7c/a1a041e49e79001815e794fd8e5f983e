@@ -1,0 +1,12 @@
+package com.biz.ap02.model;
+
+public class WorkVO{
+	
+	private int id ;
+	private String workName ;
+	private String wordMemo ;
+	
+	
+	
+	
+}

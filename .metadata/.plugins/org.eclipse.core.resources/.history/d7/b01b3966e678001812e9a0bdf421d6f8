@@ -1,0 +1,42 @@
+package com.biz.ap.service;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.List;
+
+public class FileReaderService {
+
+	String fileName = "src/com/biz/ap/data.txt";
+	FileReader fileReader = null ;
+	BufferedReader buffer = null ;
+	
+	List<String> stList = null ;
+	
+	public List<String> getFile(){
+		try {
+			fileReader = new FileReader(fileName);
+			buffer = new BufferedReader(fileReader);
+			
+			String reader = new String();
+			
+			while(true) {
+				reader = buffer.readLine();
+				if(reader == null) break ;
+				stList.add(reader);
+				
+			}
+			
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return stList ;
+	}
+	
+	
+}

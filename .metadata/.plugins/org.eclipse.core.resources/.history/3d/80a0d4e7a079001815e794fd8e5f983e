@@ -1,0 +1,57 @@
+package com.biz.ap02.dao;
+
+import java.util.List;
+
+import com.biz.ap02.model.WorkVO;
+
+/*
+ * DB와 연결해서 CRUD를 구현하기 위한 클래스의 모형, 설계도
+ */
+public interface WorkDao{
+	
+	/*
+	 * 데이터 추가
+	 * insert method()는 VO를 사용해서 데이터를 전달받고
+	 * DB에 추가하는 method
+	 */
+	public void insert(WorkVO workVO);
+	
+	/*
+	 * select를 제외한 insert, update, delete는
+	 * return 값을 void로 선언하기도 하고
+	 * int 형으로 선언하기도 한다.
+	 * 		>> return 값이 0이거나, -1이면 정상으로 처리가 되지 않았다라는 것
+	 * 		   return 값이 1이상이면 정상으로 처리가 되었다 라는 의미이다.
+	 */
+	
+	
+	/*
+	 * 데이터 조회
+	 * select method는 전체 데이터를 조회
+	 * ( 전체 데이터 : 데이터를 묶음으로)
+	 * 		selectAll()
+	 * 		데이터를 VO에 저장하고, 다시 List로 묶어서 return 해주는 형태
+	 * 		일반적으로 매개변수가 없다.
+	 * 
+	 * 1개의 데이터를 조회
+	 * 		selectOne()
+	 * 		데이터를 어떤 조건을 주고 조회해서 VO에 담아서 return 해주는 형태
+	 * 		보통 기본키(PK)를 매개변수로 전달 한다.
+	 */
+	public List<WorkVO> selectAll();
+	public WorkVO selectOne(int id);
+	
+	/*
+	 * 데이터를 수정(변경)
+	 * VO에 데이터를 담아서 전달받고
+	 * DB에 있는 (보통)1개의 레코드 데이터를 수정
+	 */
+	public void update(WordVO workVO);
+	
+	/*
+	 * 데이터를 삭제
+	 * PK 값을 매개변수로 전달받아서 DB에 있는 1개의 레코드를 삭제
+	 */
+	public void delete();
+	
+}

@@ -1,0 +1,22 @@
+package com.biz.ap02.parent;
+
+public class Animal{
+	
+	protected int leg = 0 ;
+	String eat = "";
+	protected int weight = 0;
+	public String name = "";
+	
+	public void eat() {
+		System.out.println(eat + "먹는다");
+	}
+	
+	public int getLeg() {
+		return this.leg;
+	}
+	
+	public int getWeight() {
+		return weight ;
+	}
+	
+}

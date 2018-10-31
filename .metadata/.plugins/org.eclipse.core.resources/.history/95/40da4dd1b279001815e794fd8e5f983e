@@ -1,0 +1,20 @@
+package com.biz.ap02;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.biz.ap02.child.MyArray;
+import com.biz.ap02.model.WorkVO;
+
+public class ApExec06 {
+
+	public static void main(String[] args) {
+		
+		List<WorkVO> vlist = new ArrayList<WorkVO>();
+		List<String> slist = new ArrayList<String>();
+		List<String> list = new MyArray();
+		
+
+	}
+
+}

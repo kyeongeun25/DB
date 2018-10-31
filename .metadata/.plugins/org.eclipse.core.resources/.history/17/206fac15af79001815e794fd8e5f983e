@@ -1,0 +1,5 @@
+package com.biz.ap02.parent;
+
+public class Animal{
+	
+}

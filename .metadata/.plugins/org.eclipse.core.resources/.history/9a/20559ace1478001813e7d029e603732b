@@ -1,0 +1,14 @@
+package com.biz.word;
+
+import com.biz.word.dao.WordDao;
+
+public class Exec02 {
+
+	public static void main(String[] args) {
+
+		WordDao dao = new WordDao();
+		dao.insert("korea", "대한민국");
+
+	}
+
+}

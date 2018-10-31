@@ -1,0 +1,5 @@
+package com.biz.word.dao;
+
+public class WordDao {
+	
+}

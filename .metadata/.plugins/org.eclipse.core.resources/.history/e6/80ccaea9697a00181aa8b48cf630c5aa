@@ -1,0 +1,12 @@
+package com.biz.exam.vo;
+
+/*
+ * VO : Value Object
+ * 사용자가 다양한 형태의 자료형으로 구성된 정보를 한곳에 모아서 이동, 전달하기 위해서 만드는 클래스
+ * 
+ *  사용자 정의형 변수
+ */
+
+public class StudentVO{
+	
+}

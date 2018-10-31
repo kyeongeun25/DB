@@ -1,0 +1,21 @@
+package com.biz.word;
+
+import com.biz.word.dao.WordDao;
+import com.biz.word.vo.WordVO;
+
+public class Exec02 {
+
+	public static void main(String[] args) {
+
+		WordDao dao = new WordDao();
+		dao.insert("korea", "대한민국");
+
+		WordVO vo = new WordVO();
+		vo.setWord("Republic of Korea");
+		vo.setMeaning("대한민국");
+		
+		dao.insert(vo);
+	
+	}
+
+}

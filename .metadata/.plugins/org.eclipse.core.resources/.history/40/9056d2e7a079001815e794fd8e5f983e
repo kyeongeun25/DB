@@ -1,0 +1,39 @@
+package com.biz.ap02.dao;
+
+import java.util.List;
+
+import com.biz.ap02.model.WorkVO;
+
+public class WorkDaoImp implements WorkDao {
+
+	@Override
+	public void insert(WorkVO workVO) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public List<WorkVO> selectAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public WorkVO selectOne(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void update() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void delete() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

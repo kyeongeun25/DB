@@ -1,0 +1,78 @@
+package com.biz.exam.vo;
+
+/*
+ * VO : Value Object
+ * 사용자가 다양한 형태의 자료형으로 구성된 정보를 한곳에 모아서 이동, 전달하기 위해서 만드는 클래스
+ * 
+ *  사용자 정의형 변수
+ */
+
+public class StudentVO{
+	
+	private int num ;
+	private String name ; 
+	private int age ;
+	private String tel ;
+	private String addr ;
+	
+	
+	// 생성자 2가지를 선언
+	// getter와 setter를 생성
+	// toString() 정의
+	
+	public String name() {
+		return "학생" ;
+	}
+	
+	
+	public StudentVO() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public StudentVO(int num, String name, int age, String tel, String addr) {
+		super();
+		this.num = num;
+		this.name = name;
+		this.age = age;
+		this.tel = tel;
+		this.addr = addr;
+	}
+	public int getNum() {
+		return num;
+	}
+	public void setNum(int num) {
+		this.num = num;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	public String getTel() {
+		return tel;
+	}
+	public void setTel(String tel) {
+		this.tel = tel;
+	}
+	public String getAddr() {
+		return addr;
+	}
+	public void setAddr(String addr) {
+		this.addr = addr;
+	}
+	@Override
+	public String toString() {
+		return "StudentVO [num=" + num + ", name=" + name + ", age=" + age + ", tel=" + tel + ", addr=" + addr + "]";
+	}
+	
+	
+	
+	
+}

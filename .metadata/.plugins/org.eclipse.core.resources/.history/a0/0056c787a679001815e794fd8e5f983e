@@ -1,0 +1,18 @@
+package com.biz.ap02.service;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+
+/*
+ * enter.txt 파일을 열어서 사람들의 이름을 읽어들이고
+ * 응모자 중에서 3명만 추첨하는 서비스
+ */
+public class RaffleService{
+	
+	String fileName = "src/com/biz/ap02/enter.txt";
+	FileReader fileReader = null ;
+	BufferedReader buffer = null ;
+	
+	fileReader = new FileReader(fileName);
+	
+}

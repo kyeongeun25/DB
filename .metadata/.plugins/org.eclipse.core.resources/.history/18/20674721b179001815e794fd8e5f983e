@@ -1,0 +1,12 @@
+package com.biz.ap02.child;
+
+import com.biz.ap02.parent.Animal;
+
+public class Dog extends Animal {
+	
+	public Dog() {
+		this.name = "몽실이";
+		
+	}
+	
+}
